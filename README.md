@@ -1,5 +1,5 @@
 # README
 
-New New Dotfiles Setup Flow
+I've changed what tool I use to manage my dotfiles so many times in the last month I'm becoming a parody of myself.
 
-Uses https://github.com/anishathalye/dotbot
+This repo uses [chezmoi](https://www.chezmoi.io/).
