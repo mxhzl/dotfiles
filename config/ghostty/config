@@ -14,3 +14,4 @@ font-family = "CaskaydiaCove Nerd Font Mono"
 font-size = 18
 maximize = true
 auto-update-channel = tip
+command = /opt/homebrew/bin/fish
