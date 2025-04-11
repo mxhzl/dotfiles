@@ -1,3 +1,7 @@
+[user]
+  name = Maxine
+  email = maxine@mxhzl.com
+
 [alias]
   ### Informational
   # Long-form
@@ -86,7 +90,6 @@
 
 [core]
   autocrlf   = input
-  editor     = $EDITOR
   ignoreCase = true
   safecrlf   = warn
   trustctime = false
@@ -125,9 +128,6 @@
 [pull]
   rebase = false
 
-[include]
-  path = ~/.gitconfig.local
-
 [color "diff-highlight"]
 	oldNormal = red bold
 	oldHighlight = red bold 52
@@ -149,8 +149,8 @@
   diffFilter = delta --color-only
 
 [delta]
-  navigate = true  # use n and N to move between diff sections
-  dark = true      # or light = true, or omit for auto-detection
+  navigate = true 
+  dark = true
   line-numbers = true
   hyperlinks = true
   side-by-side = true
@@ -161,3 +161,9 @@
 
 [branch]
 	sort = -committerdate
+
+[include]
+  path = ~/.gitconfig.local
+
+[includeIf "gitdir:**/work/**/.git"]
+  path = ~/.gitconfig.work

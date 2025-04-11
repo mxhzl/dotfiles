@@ -1,10 +1,4 @@
 [tools]
-"cargo:bacon" = "latest"
-"cargo:bat" = "latest"
-"cargo:eza" = "latest"
-"cargo:mprocs" = "latest"
-"cargo:zoxide" = "latest"
-"cargo:starship" = "latest"
 go = "latest"
 lua = "latest"
 node = "latest"
