@@ -1,0 +1,169 @@
+[user]
+  name = Maxine
+  email = maxine@mxhzl.com
+
+[alias]
+  ### Informational
+  # Long-form
+  amend            = commit --amend
+  files            = diff --name-only
+  github-log       = !git --no-pager prettylog --reverse
+  last-commit      = log -n 1
+  local-branches   = branch -l
+  prettylog        = log --pretty=format:'%C(blue)%h%C(reset) %C(bold)%s%C(reset) %C(yellow)<%ae>%C(reset)' --abbrev-commit
+  push-force       = push --force-with-lease
+  remote-branches  = branch -r
+  summary          = diff --shortstat
+  tags             = tag -l --sort=v:refname
+  # Abbreviated
+  br   = branch
+  bs   = !git blame-short
+  cm   = commit
+  dc   = diff --cached
+  ghl  = !git github-log
+  l5   = !git github-log -n5
+  l10  = !git github-log -n10
+  lbr  = !git local-branches
+  lc   = !git last-commit
+  lm   = log main..
+  p    = push -u
+  pf   = !git push-force
+  pl   = !git prettylog
+  puom = pull origin main
+  rbr  = !git remote-branches
+  st   = status
+  sum  = diff --shortstat
+  aa = add --all
+  ap = add --patch
+  ci = commit -v
+  co = checkout
+  mm = merge main
+
+    # Fancy logging.
+  #   h = head
+  #   hp = head with patch
+  #   r = recent commits, only current branch
+  #   ra = recent commits, all reachable refs
+  #   l = all commits, only current branch
+  #   la = all commits, all reachable refs
+  #   b = all branches
+  #   bs = all branches, sorted by last commit date
+  head = !git r -1
+  h = !git head
+  hp = "!. ~/.githelpers && show_git_head"
+  r = !GIT_NO_PAGER=1 git l -30
+  ra = !git r --all
+  l = "!. ~/.githelpers && pretty_git_log"
+  la = !git l --all
+  b = "!. ~/.githelpers && pretty_git_branch"
+  bs = "!. ~/.githelpers && pretty_git_branch_sorted"
+
+[color]
+  branch      = auto
+  diff        = auto
+  interactive = auto
+  status      = auto
+  ui          = auto
+
+[color "branch"]
+  current  = white bold reverse
+  local    = green
+  remote   = yellow
+  upstream = yellow bold
+
+[color "diff"]
+  commit     = yellow bold
+  frag       = blue ul
+  func       = blue bold
+  meta       = cyan bold
+  new        = green bold
+  old        = red bold
+  whitespace = red reverse
+
+[color "status"]
+  branch    = white bold ul
+  changed   = yellow bold reverse
+  header    = black bold
+  untracked = normal bold reverse
+  updated   = magenta bold
+  unmerged  = red bold reverse
+
+[core]
+  autocrlf   = input
+  ignoreCase = true
+  safecrlf   = warn
+  trustctime = false
+  excludesfile = ~/.gitignore
+  pager = delta
+
+[core.whitespace]
+  tab-in-indent = true
+
+[diff]
+  algorithm           = histogram
+  compactionHeuristic = true
+  renames             = copies
+  colorMoved          = true
+
+[merge]
+  verbosity = 5
+  conflictstyle = zdiff3
+
+[push]
+  default = current
+  autoSetupRemote = true
+
+[status]
+  showUntrackedFiles = all
+
+[fetch]
+  prune = false
+
+[commit]
+  verbose = true
+
+[checkout]
+  defaultRemote = origin
+
+[pull]
+  rebase = false
+
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+
+[color "diff"]
+	meta = yellow
+	frag = magenta bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+
+[init]
+  defaultBranch = main
+
+[interactive]
+  diffFilter = delta --color-only
+
+[delta]
+  navigate = true 
+  dark = true
+  line-numbers = true
+  hyperlinks = true
+  side-by-side = true
+  true-color = always
+
+[url "git@github.com:"]
+	insteadOf = "https://github.com/"
+
+[branch]
+	sort = -committerdate
+
+[include]
+  path = ~/.gitconfig.local
+
+[includeIf "gitdir:**/work/**/.git"]
+  path = ~/.gitconfig.work
