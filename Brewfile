@@ -30,11 +30,8 @@ brew "eza"
 brew "mprocs"
 brew "zoxide"
 brew "starship"
-
 brew "age"
-brew "broot"
 brew "chezmoi"
-brew "navi"
 
 cask "font-hack-nerd-font"
 cask "font-meslo-lg-nerd-font"
