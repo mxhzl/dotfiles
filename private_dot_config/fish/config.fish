@@ -19,8 +19,8 @@ set -x EDITOR nvim
 set -x VISUAL $EDITOR
 
 if command -q starship
-    starship init fish --print-full-init | source
-    enable_transience
+    # starship init fish --print-full-init | source
+    # enable_transience
 end
 
 if command -q zoxide
@@ -43,4 +43,3 @@ abbr c codium -n
 if test -e $__fish_config_dir/config.fish.local
     source $__fish_config_dir/config.fish.local
 end
-
