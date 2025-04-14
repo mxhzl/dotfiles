@@ -28,6 +28,11 @@ if command -q zoxide
     abbr cd z
 end
 
+if command -q chezmoi
+    abbr cz chezmoi
+    abbr cze chezmoi edit -a
+end
+
 abbr be bundle exec
 abbr rf source $__fish_config_dir/config.fish
 abbr cp cp -iv
@@ -37,7 +42,6 @@ abbr mv mv -iv
 abbr rm rm -iv
 abbr g git
 abbr b brew
-abbr cz chezmoi
 abbr c codium -n
 
 if test -e $__fish_config_dir/config.fish.local

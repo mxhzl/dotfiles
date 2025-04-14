@@ -32,6 +32,7 @@ brew "zoxide"
 brew "starship"
 brew "age"
 brew "chezmoi"
+brew "gum"
 
 cask "font-hack-nerd-font"
 cask "font-meslo-lg-nerd-font"

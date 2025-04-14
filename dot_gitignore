@@ -130,3 +130,6 @@ $RECYCLE.BIN/
 
 # mise local config
 mise.local.toml
+
+# todo lists
+*.taskpaper
