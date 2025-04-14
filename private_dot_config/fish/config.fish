@@ -2,6 +2,8 @@ status -i || exit
 
 set fish_greeting
 
+set -gx FISH_FILE $__fish_config_dir/config.fish
+
 set -gx CLICOLOR 1
 set -gx TERM xterm-256color
 set -gx LS_COLORS bxExCxDxfxegedabagacaf
@@ -34,7 +36,8 @@ if command -q chezmoi
 end
 
 abbr be bundle exec
-abbr rf source $__fish_config_dir/config.fish
+abbr rf source $FISH_FILE
+abbr ef $EDITOR $FISH_FILE
 abbr cp cp -iv
 abbr gst git status
 abbr mkdir mkdir -p
