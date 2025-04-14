@@ -5,3 +5,6 @@ node = "latest"
 ruby = "latest"
 rust = "latest"
 usage = "latest"
+
+[settings]
+experimental = true
