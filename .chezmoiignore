@@ -1,5 +1,9 @@
 README.md
 LISCENE
+.vim/plugged
+.vim/sessions
+fish_variables
+.config/nvim/lazy-lock.json
 
 # https://github.com/twpayne/chezmoi/issues/2203#issuecomment-1179423193
 **/.DS_Store
