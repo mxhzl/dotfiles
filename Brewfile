@@ -33,6 +33,8 @@ brew "starship"
 brew "age"
 brew "chezmoi"
 brew "gum"
+brew "helix"
+brew "zellij"
 
 cask "font-hack-nerd-font"
 cask "font-meslo-lg-nerd-font"

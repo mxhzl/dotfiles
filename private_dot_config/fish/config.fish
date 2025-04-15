@@ -17,7 +17,7 @@ test -e $HOME/.1password/agent.sock && set -gx SSH_AUTH_SOCK $HOME/.1password/ag
 
 set -gx fisher_path $__fish_config_dir/fisher
 
-set -x EDITOR nvim
+set -x EDITOR hx
 set -x VISUAL $EDITOR
 
 if command -q starship
