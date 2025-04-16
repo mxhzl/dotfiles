@@ -38,6 +38,3 @@ cask "font-hack-nerd-font"
 cask "1password-cli"
 cask "vscodium"
 cask "ghostty"
-
-vscode "catppuccin.catppuccin-vsc"
-vscode "rust-lang.rust-analyzer"
