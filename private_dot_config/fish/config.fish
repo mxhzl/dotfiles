@@ -21,8 +21,8 @@ set -x EDITOR hx
 set -x VISUAL $EDITOR
 
 if command -q starship
-    # starship init fish --print-full-init | source
-    # enable_transience
+    starship init fish --print-full-init | source
+    enable_transience
 end
 
 if command -q zoxide
