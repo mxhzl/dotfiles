@@ -8,8 +8,6 @@ continuation_prompt = "[▸▹ ](dimmed white)"
 format = """
 $directory\
 
-$fill \
-
 $git_branch$git_commit$git_state$git_status$git_metrics\
 
 $package\
@@ -20,27 +18,21 @@ $python\
 $rust\
 $nodejs\
 
-$line_break\
-
 $sudo\
 $character"""
 
 [character]
-format = "$symbol "
+format = " $symbol "
 success_symbol = "[❯](green)"
 error_symbol = "[x](red)"
 
 [directory]
 truncation_length = 999
 truncate_to_repo = false
-read_only = ""
 use_os_path_sep = true
 style = "blue"
 format = '[$path ]($style)'
-
-[fill]
-symbol = '-'
-style = "dimmed black"
+read_only = " 󰌾"
 
 [git_branch]
 format = "[$symbol $branch]($style)"
@@ -48,12 +40,8 @@ symbol = ""
 style = "pink"
 only_attached = true
 
-[git_metrics]
-format = '([+$added]($added_style))([-$deleted]($deleted_style))'
-added_style = 'dimmed green'
-deleted_style = 'dimmed red'
-ignore_submodules = true
-disabled = true
+[git_commit]
+tag_symbol = ''
 
 [git_status]
 style = "pink"
@@ -68,6 +56,7 @@ deleted = "[✕](red)"
 format = " [${symbol}${version}]($style)"
 version_format = "${raw}"
 style = "yellow"
+symbol = " "
 
 [nodejs]
 format = '[ node ($version)]($style)'
@@ -75,27 +64,31 @@ version_format = "${raw}"
 
 [python]
 format = " [${symbol}${version}]($style)"
-symbol = "[⌉](blue)⌊ "
 version_format = "${raw}"
 style = "yellow"
+symbol = " "
 
 [ruby]
 format = " [${symbol}${version}]($style)"
 version_format = "${raw}"
 style = "red"
+symbol = " "
 
 [rust]
 format = " [${symbol}${version}]($style)"
 version_format = "${raw}"
 style = "red"
+symbol = "󱘗 "
 
 [package]
-format = " [${symbol}${version}]($style)"
+format = "[${symbol}${version}]($style)"
 version_format = "${raw}"
 style = "dimmed yellow"
+symbol = "󰏗 "
 
 [golang]
 format = " [$symbol($version )]($style)"
+symbol = " "
 
 [sudo]
 format = "[$symbol]($style)"
