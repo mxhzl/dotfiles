@@ -17,12 +17,16 @@ test -e $HOME/.1password/agent.sock && set -gx SSH_AUTH_SOCK $HOME/.1password/ag
 
 set -gx fisher_path $__fish_config_dir/fisher
 
-set -x EDITOR hx
+if command -q hx
+    set -x EDITOR hx
+else
+    set -x EDITOR vim
+end
 set -x VISUAL $EDITOR
 
 if command -q starship
-    starship init fish --print-full-init | source
-    enable_transience
+    # starship init fish --print-full-init | source
+    # enable_transience
 end
 
 if command -q zoxide
@@ -33,6 +37,7 @@ end
 if command -q chezmoi
     abbr cz chezmoi
     abbr cze chezmoi edit -a
+    abbr czef chezmoi edit -a $FISH_FILE
 end
 
 abbr be bundle exec
