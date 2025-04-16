@@ -36,6 +36,7 @@ end
 
 if command -q chezmoi
     abbr cz chezmoi
+    abbr cza chezmoi apply
     abbr cze chezmoi edit -a
     abbr czef chezmoi edit -a $FISH_FILE
 end

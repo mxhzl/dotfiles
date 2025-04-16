@@ -5,6 +5,7 @@ node = "latest"
 ruby = "latest"
 rust = "latest"
 usage = "latest"
+python = "latest"
 
 [settings]
 experimental = true
