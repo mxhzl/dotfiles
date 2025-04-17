@@ -8,9 +8,7 @@
 
 
 theme = catppuccin-mocha
-font-family = "MesloLGS Nerd Font Mono"
 font-family = "Hack Nerd Font Mono"
-font-family = "CaskaydiaCove Nerd Font Mono"
 font-size = 18
 maximize = true
 auto-update-channel = tip
