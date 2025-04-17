@@ -33,8 +33,13 @@ brew "gum"
 brew "helix"
 brew "zellij"
 brew "ansible"
+brew "terraform"
+brew "sqlite"
+brew "sk"
+
 
 cask "font-hack-nerd-font"
 cask "1password-cli"
 cask "vscodium"
 cask "ghostty"
+cask "vlc"
