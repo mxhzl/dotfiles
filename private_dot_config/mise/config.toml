@@ -6,6 +6,7 @@ ruby = "latest"
 rust = "latest"
 usage = "latest"
 python = "latest"
+"gem:na" = "latest"
 
 [settings]
 experimental = true
