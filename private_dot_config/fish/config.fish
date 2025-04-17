@@ -25,8 +25,8 @@ end
 set -x VISUAL $EDITOR
 
 if command -q starship
-    # starship init fish --print-full-init | source
-    # enable_transience
+    starship init fish --print-full-init | source
+    enable_transience
 end
 
 if command -q zoxide
@@ -40,6 +40,10 @@ if command -q chezmoi
     abbr czu chezmoi update
     abbr cze chezmoi edit -a
     abbr czef chezmoi edit -a $FISH_FILE
+end
+
+if command -q jj
+    jj util completion fish | source
 end
 
 abbr be bundle exec

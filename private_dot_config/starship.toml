@@ -45,12 +45,6 @@ tag_symbol = ''
 
 [git_status]
 style = "pink"
-conflicted = "[✖](red)"
-untracked = "[…](yellow)"
-modified = "[✚$count](yellow)"
-staged = "[●](yellow)"
-renamed = "[»](blue)"
-deleted = "[✕](red)"
 
 [lua]
 format = " [${symbol}${version}]($style)"

@@ -3,7 +3,7 @@ function nvim
 
     switch $confirm
         case y Y
-            $EDITOR $argv
+            command $EDITOR $argv
         case '' n
             command nvim $argv
     end
