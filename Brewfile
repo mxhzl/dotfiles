@@ -1,6 +1,6 @@
 brew "cmake"
 brew "coreutils"
-brew "fish", args: ["HEAD"]
+brew "fish"
 brew "fzf"
 brew "ripgrep"
 brew "gcc"
