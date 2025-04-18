@@ -27,8 +27,7 @@ success_symbol = "[❯](green)"
 error_symbol = "[x](red)"
 
 [directory]
-truncation_length = 999
-truncate_to_repo = false
+truncate_to_repo = true
 use_os_path_sep = true
 style = "blue"
 format = '[$path ]($style)'

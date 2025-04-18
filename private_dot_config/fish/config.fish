@@ -22,6 +22,7 @@ if command -q hx
 else
     set -x EDITOR vim
 end
+
 set -x VISUAL $EDITOR
 
 if command -q starship
@@ -42,9 +43,7 @@ if command -q chezmoi
     abbr czef chezmoi edit -a $FISH_FILE
 end
 
-if command -q jj
-    jj util completion fish | source
-end
+command -q jj && jj util completion fish | source
 
 abbr be bundle exec
 abbr rf source $FISH_FILE

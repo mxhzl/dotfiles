@@ -33,7 +33,6 @@ brew "gum"
 brew "helix"
 brew "zellij"
 brew "ansible"
-brew "terraform"
 brew "sqlite"
 brew "jj"
 
