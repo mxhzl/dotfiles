@@ -129,18 +129,18 @@
   rebase = false
 
 [color "diff-highlight"]
-	oldNormal = red bold
-	oldHighlight = red bold 52
-	newNormal = green bold
-	newHighlight = green bold 22
+  oldNormal = red bold
+  oldHighlight = red bold 52
+  newNormal = green bold
+  newHighlight = green bold 22
 
 [color "diff"]
-	meta = yellow
-	frag = magenta bold
-	commit = yellow bold
-	old = red bold
-	new = green bold
-	whitespace = red reverse
+  meta = yellow
+  frag = magenta bold
+  commit = yellow bold
+  old = red bold
+  new = green bold
+  whitespace = red reverse
 
 [init]
   defaultBranch = main
@@ -157,10 +157,10 @@
   true-color = always
 
 [url "git@github.com:"]
-	insteadOf = "https://github.com/"
+  insteadOf = "https://github.com/"
 
 [branch]
-	sort = -committerdate
+  sort = -committerdate
 
 [include]
   path = ~/.gitconfig.local
