@@ -35,9 +35,12 @@ brew "zellij"
 brew "sqlite"
 brew "jj"
 brew "ansible"
+brew "mas"
 
 cask "font-hack-nerd-font"
 cask "1password-cli"
 cask "vscodium"
 cask "ghostty"
 cask "vlc"
+
+mas "Wireguard", id: 1451685025
