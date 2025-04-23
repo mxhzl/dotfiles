@@ -42,5 +42,3 @@ cask "1password-cli"
 cask "vscodium"
 cask "ghostty"
 cask "vlc"
-
-mas "Wireguard", id: 1451685025
