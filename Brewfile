@@ -35,7 +35,6 @@ brew "zellij"
 brew "sqlite"
 brew "jj"
 brew "ansible"
-brew "mas"
 
 cask "font-hack-nerd-font"
 cask "1password-cli"
