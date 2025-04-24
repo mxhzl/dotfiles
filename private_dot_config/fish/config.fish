@@ -56,6 +56,7 @@ abbr rm rm -iv
 abbr g git
 abbr b brew
 abbr c codium -n
+abbr s subl -n
 
 if test -e $__fish_config_dir/config.fish.local
     source $__fish_config_dir/config.fish.local
