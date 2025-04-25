@@ -13,6 +13,8 @@ command -q cargo && set -gx PATH $HOME/.cargo/bin $PATH
 set -gx PATH $HOME/.bin $PATH
 set -gx PATH $HOME/.local/bin $PATH
 
+set -gx PATH "/Applications/Sublime Text.app/Contents/SharedSupport/bin" $PATH
+
 test -e $HOME/.1password/agent.sock && set -gx SSH_AUTH_SOCK $HOME/.1password/agent.sock
 
 set -gx fisher_path $__fish_config_dir/fisher
