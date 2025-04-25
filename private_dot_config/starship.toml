@@ -91,7 +91,7 @@ style = "red"
 symbol = "󱘗 "
 
 [package]
-format = "[${symbol}${version}]($style)"
+format = " [${symbol}${version}]($style)"
 version_format = "${raw}"
 style = "dimmed yellow"
 symbol = "󰏗 "
