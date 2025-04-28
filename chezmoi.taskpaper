@@ -1,4 +1,7 @@
 Inbox:
 chezmoi:
+	- Install 1Password cli during chezmoi apply @na
+	- Symlink 1Password ssh sock as part of chezmoi apply @na
+	- Create key files with chezmoi and pull values from 1Password cli automatically @na
 	- configure it so that I can commit over ssh @na
 Archive:
