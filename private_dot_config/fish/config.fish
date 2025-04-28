@@ -55,10 +55,9 @@ abbr gst git status
 abbr mkdir mkdir -p
 abbr mv mv -iv
 abbr rm rm -iv
-abbr g git
-abbr b brew
-abbr c codium -n
-abbr s subl --launch-or-new-window
+
+command -q codium && abbr c codium -n
+command -q subl && abbr s subl --launch-or-new-window
 
 if test -e $__fish_config_dir/config.fish.local
     source $__fish_config_dir/config.fish.local
