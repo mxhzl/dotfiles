@@ -7,8 +7,15 @@
 # on Ghostty's website, at https://ghostty.org/docs/config.
 
 
-theme = catppuccin-mocha
-font-family = "Hack Nerd Font Mono"
+theme = maxine
+font-family = "Iosevka Term"
+font-family-bold = "Iosevka Term Heavy"
+font-family-italic = "Iosevka Term Italic"
+font-family-bold-italic = "Iosevka Term Heavy Italic"
+font-feature = "Iosevka Term"
+font-feature = "Iosevka Term Heavy"
+font-feature = "Iosevka Term Oblique"
+font-feature = "Iosevka Term Heavy Oblique"
 font-size = 18
 keybind = alt+left=unbind
 keybind = alt+right=unbind

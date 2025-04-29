@@ -6,8 +6,6 @@ set -gx FISH_FILE $__fish_config_dir/config.fish
 
 set -gx CLICOLOR 1
 set -gx TERM xterm-256color
-set -gx LS_COLORS bxExCxDxfxegedabagacaf
-set -gx LS_COLORS "di=31:ln=1;34:so=1;32:pi=1;33:ex=35:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;45"
 
 command -q cargo && set -gx PATH $HOME/.cargo/bin $PATH
 set -gx PATH $HOME/.bin $PATH
