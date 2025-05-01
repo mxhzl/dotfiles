@@ -60,5 +60,6 @@ vscode "tamasfe.even-better-toml"
 vscode "hashicorp.terraform"
 vscode "redhat.vscode-yaml"
 vscode "ms-python.python"
+vscode "streetsidesoftware.code-spell-checker"
 
 mas "Amphetamine", id: 937984704   
