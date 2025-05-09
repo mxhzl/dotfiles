@@ -60,3 +60,8 @@ command -q subl && abbr s subl --launch-or-new-window
 if test -e $__fish_config_dir/config.fish.local
     source $__fish_config_dir/config.fish.local
 end
+
+if set -q ZELLIJ
+else
+    zat
+end
