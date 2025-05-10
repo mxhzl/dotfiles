@@ -62,5 +62,6 @@ vscode "ms-python.python"
 vscode "streetsidesoftware.code-spell-checker"
 vscode "Shopify.ruby-lsp"
 vscode "sorbet.sorbet-vscode-extension"
+vscode "wholroyd.jinja"
 
 mas "Amphetamine", id: 937984704   
