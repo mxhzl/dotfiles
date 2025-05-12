@@ -39,6 +39,7 @@ brew "mas"
 brew "doctl"
 brew "postgresql@17"
 brew "pgcli"
+brew "xq"
 
 cask "font-hack-nerd-font"
 cask "font-iosevka-aile"
@@ -59,9 +60,8 @@ vscode "tamasfe.even-better-toml"
 vscode "hashicorp.terraform"
 vscode "redhat.vscode-yaml"
 vscode "ms-python.python"
+vscode "ms-python.debugpy"
 vscode "streetsidesoftware.code-spell-checker"
 vscode "Shopify.ruby-lsp"
-vscode "sorbet.sorbet-vscode-extension"
-vscode "wholroyd.jinja"
 
 mas "Amphetamine", id: 937984704   

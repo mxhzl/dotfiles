@@ -1,7 +1,5 @@
 [tools]
 go = "latest"
-lua = "latest"
-node = "latest"
 ruby = "latest"
 rust = "latest"
 usage = "latest"
