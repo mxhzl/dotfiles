@@ -1,5 +1,7 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
+add_newline = false
+
 format = """
 $username\
 $hostname\
@@ -12,13 +14,13 @@ palette = 'catppuccin_mocha'
 
 [username]
 show_always = false
-style_user = "red"
-style_root = "red"
-format = '[$user]($style)'
+style_user = "lavender"
+style_root = "lavender"
+format = ' [$user]($style)'
 
 [hostname]
 ssh_symbol = "@"
-style = "red"
+style = "lavender"
 format = "[$ssh_symbol$hostname]($style)"
 
 [directory]

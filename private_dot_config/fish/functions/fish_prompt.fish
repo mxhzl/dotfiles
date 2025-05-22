@@ -1,18 +1,19 @@
 function fish_prompt --description 'Write out the prompt'
     set -l last_status $status
 
-	if not set -q __fish_git_prompt_show_informative_status
+    if not set -q __fish_git_prompt_show_informative_status
         set -g __fish_git_prompt_show_informative_status 1
     end
-    if not set -q __fish_git_prompt_hide_untrackedfiles
-        set -g __fish_git_prompt_hide_untrackedfiles 1
+
+    if not set -q __fish_git_prompt_showuntrackedfiles
+        set -g __fish_git_prompt_showuntrackedfiles 1
     end
 
     if not set -q __fish_git_prompt_color_branch
         set -g __fish_git_prompt_color_branch magenta --bold
     end
     if not set -q __fish_git_prompt_showupstream
-        set -g __fish_git_prompt_showupstream "informative"
+        set -g __fish_git_prompt_showupstream informative
     end
     if not set -q __fish_git_prompt_char_upstream_ahead
         set -g __fish_git_prompt_char_upstream_ahead "↑ "
@@ -63,18 +64,18 @@ function fish_prompt --description 'Write out the prompt'
     set -l status_color red
 
     switch $last_status
-    case 0
-        set status_color green
+        case 0
+            set status_color green
     end
 
     # PWD
-    set_color $status_color --bold
-    printf "➜  "
     set_color blue --bold
     echo -n (basename $PWD)
     set_color normal
 
     printf '%s ' (__fish_vcs_prompt)
 
+    set_color $status_color --bold
+    printf "➜ "
     set_color normal
 end
