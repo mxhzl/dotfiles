@@ -48,11 +48,8 @@ command -q jj && jj util completion fish | source
 abbr be bundle exec
 abbr rf source $FISH_FILE
 abbr ef $EDITOR $FISH_FILE
-abbr cp cp -iv
 abbr gst git status
 abbr mkdir mkdir -p
-abbr mv mv -iv
-abbr rm rm -iv
 
 command -q codium && abbr c codium -n
 command -q subl && abbr s subl --launch-or-new-window

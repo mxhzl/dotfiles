@@ -1,5 +1,4 @@
 theme "maxine"
-default_layout "compact"
 show_startup_tips false
 show_release_notes false
 session_serialization false
